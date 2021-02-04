@@ -4,6 +4,55 @@
     "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\PrismManager\\PrismManager.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj",
+        "projectName": "LoginModule",
+        "projectPath": "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
     "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\PrismManager\\PrismManager.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +76,11 @@
         },
         "frameworks": {
           "net472": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj"
+              }
+            }
           }
         }
       },

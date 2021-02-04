@@ -10,6 +10,8 @@ namespace PrismManager.Views
         public Shell()
         {
             InitializeComponent();
+
+            this.MouseDown += (e, s) => DragMove();
         }
     }
 }

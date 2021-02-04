@@ -4,6 +4,7 @@ using Prism.Modularity;
 using System.Windows;
 using System.ComponentModel;
 using Prism.DryIoc;
+using System.Reflection;
 
 namespace PrismManager
 {
@@ -22,6 +23,7 @@ namespace PrismManager
 
         }
 
+
         /// <summary>
         /// 预设模块
         /// </summary>
@@ -29,15 +31,23 @@ namespace PrismManager
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             base.ConfigureModuleCatalog(moduleCatalog);
-            
-            //moduleCatalog.AddModule<LoginModule.LoginModuleModule>();
-
             var MedicineModuleType = typeof(HomeModule.HomeModuleModule);
-            moduleCatalog.AddModule(new ModuleInfo() {
-                ModuleName = MedicineModuleType.Name,
-                ModuleType = MedicineModuleType.AssemblyQualifiedName,
+            moduleCatalog.AddModule(SetModuleInfo(MedicineModuleType.Name + ",ViewA", MedicineModuleType.AssemblyQualifiedName));
+        }
+
+
+
+
+
+        ModuleInfo SetModuleInfo(string Nmae,string Moduletype, InitializationMode initialization=InitializationMode.OnDemand)
+        {
+            return new ModuleInfo()
+            {
+                ModuleName = Nmae,
+                ModuleType = Moduletype,
                 InitializationMode = InitializationMode.OnDemand
-            });
+            };
+           
         }
 
 

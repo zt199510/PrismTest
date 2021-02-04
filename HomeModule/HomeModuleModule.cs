@@ -16,6 +16,7 @@ namespace HomeModule
             regionManager.RegisterViewWithRegion("MainRegion", typeof(ViewA));
         }
 
+
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
 

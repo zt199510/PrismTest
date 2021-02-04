@@ -66,6 +66,19 @@
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
         }
+      },
+      "LoginModule/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/LoginModule.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoginModule.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
@@ -132,6 +145,19 @@
         },
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
+        }
+      },
+      "LoginModule/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/LoginModule.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoginModule.dll": {}
         }
       }
     },
@@ -200,6 +226,19 @@
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
         }
+      },
+      "LoginModule/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/LoginModule.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoginModule.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
@@ -266,6 +305,19 @@
         },
         "runtime": {
           "lib/net47/Prism.Wpf.dll": {}
+        }
+      },
+      "LoginModule/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/LoginModule.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoginModule.dll": {}
         }
       }
     }
@@ -394,10 +446,16 @@
         "prism.wpf.8.0.0.1909.nupkg.sha512",
         "prism.wpf.nuspec"
       ]
+    },
+    "LoginModule/1.0.0": {
+      "type": "project",
+      "path": "../LoginModule/LoginModule.csproj",
+      "msbuildProject": "../LoginModule/LoginModule.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
+      "LoginModule >= 1.0.0",
       "Prism.DryIoc >= 8.0.0.1909"
     ]
   },
@@ -427,7 +485,11 @@
       },
       "frameworks": {
         "net472": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj"
+            }
+          }
         }
       }
     },

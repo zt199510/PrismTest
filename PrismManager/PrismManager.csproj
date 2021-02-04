@@ -40,9 +40,7 @@
     <Reference Include="HomeModule">
       <HintPath>..\HomeModule\bin\Debug\HomeModule.dll</HintPath>
     </Reference>
-    <Reference Include="LoginModule">
-      <HintPath>..\LoginModule\bin\Debug\LoginModule.dll</HintPath>
-    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -102,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoginModule\LoginModule.csproj">
+      <Project>{2c9e4fdb-05d3-46c0-87f6-a5cb55ce44e0}</Project>
+      <Name>LoginModule</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

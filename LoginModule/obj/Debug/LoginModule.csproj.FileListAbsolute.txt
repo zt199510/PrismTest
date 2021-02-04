@@ -6,10 +6,7 @@ C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\bin\Debug\Prism.dll
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\bin\Debug\Prism.pdb
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\bin\Debug\Prism.Wpf.dll
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\bin\Debug\Prism.Wpf.pdb
-C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\Views\ViewA.g.cs
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule_MarkupCompile.cache
-C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule_MarkupCompile.lref
-C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\Views\ViewA.baml
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.g.resources
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.Properties.Resources.resources
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.csproj.GenerateResource.cache
@@ -17,3 +14,10 @@ C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModul
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.csproj.CopyComplete
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.dll
 C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.pdb
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\Views\Login.baml
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\Views\Login.g.cs
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\Views\Input.baml
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\Views\Input.g.cs
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\source\repos\PrsimTest23\LoginModule\obj\Debug\LoginModule_MarkupCompile.lref

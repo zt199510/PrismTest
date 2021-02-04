@@ -22,19 +22,33 @@ namespace PrismManager.ViewModels
         IRegionManager _regionManager;
         IRegion _region;
         IModuleManager _moduleManager;
-     
-        private string _title = "Prism Unity Application";
 
-        /// <summary>
-        /// 注释
-        /// </summary>
-        public string Title
+        #region 属性
+
+        private int _Width;
+
+        public int Width
         {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
+            get { return _Width; }
+            set { SetProperty(ref _Width, value); }
         }
+
+        private int _Height;
+
+        public int Height
+        {
+            get { return _Height; }
+            set { SetProperty(ref _Height,value); }
+
+        }
+
+
+        #endregion
+
         public ShellViewModel(IContainerExtension Container, IRegionManager regionManager, IEventAggregator eventAggregator, IModuleManager moduleManager)
         {
+            Width = 340;
+            Height = 390;
             #region 接受登陆消息
             ea = eventAggregator;
             ea.GetEvent<LoginSentEvent>().Subscribe(MessageReceived);//订阅消息
@@ -44,38 +58,36 @@ namespace PrismManager.ViewModels
             _moduleManager = moduleManager;
             _moduleManager.LoadModuleCompleted += _moduleManager_LoadModuleCompleted;
         }
+
         private void _moduleManager_LoadModuleCompleted(object sender, LoadModuleCompletedEventArgs e)
         {
             MessageBox.Show($"{e.ModuleInfo.ModuleName}模块被加载了");
         }
-
-
-        private void NvanPage<T>() {
+        private void NvanPage<T>()
+        {
 
             //获取对应ContentControl
-            _region = _regionManager.Regions["MainRegion"];
-            var PageMod=_region.Views.Where(o => o.GetType() == typeof(T)).FirstOrDefault();
-            if (PageMod==null)
-            {
-                _moduleManager.LoadModule("HomeModuleModule");
-                NvanPage<T>();
-            }
-            else
-            {
-                _region.Activate(PageMod);
-            }
-        } 
 
+            var PageMod = _region.Views.Where(o => o.GetType() == typeof(T)).FirstOrDefault();
+            if (PageMod == null) return;
+            _region.Activate(PageMod);
+        }
 
         private void MessageReceived(bool loginState)
         {
             if (loginState)
             {
+                _region = _regionManager.Regions["MainRegion"];
+                _region.RemoveAll();
+                _moduleManager.LoadModule("HomeModule");
                 NvanPage<HomeModule.Views.ViewA>();
+                Width = 1024;
+                Height = 768;
             }
         }
 
-  
+
 
     }
+
 }

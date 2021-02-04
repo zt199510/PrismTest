@@ -10,9 +10,10 @@ namespace LoginModule
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("MainRegion",typeof(ViewA));
+            regionManager.RegisterViewWithRegion("MainRegion",typeof(Login));
+           
         }
-
+       
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             
