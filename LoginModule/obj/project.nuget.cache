@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "e8ypWClGCwv+8FJYqFDufT/NCCdB6Q9mzqmKoVGlQoioSYnh+2ncIFB8T1+P28mq362c5UwouGfNqlx+B3hZIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\PrsimTest23\\LoginModule\\LoginModule.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512"
+  ],
+  "logs": []
+}
